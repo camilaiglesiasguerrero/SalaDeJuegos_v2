@@ -6,13 +6,16 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { RouterModule, Router} from '@angular/router';
 import { AdivinaElNumeroComponent } from './componentes/adivina-el-numero/adivina-el-numero.component';
+import { AgilidadAritmeticaComponent } from './Componentes/agilidad-aritmetica/agilidad-aritmetica.component';
 
-let miRuteo = [{path:'adivina',component:AdivinaElNumeroComponent}];
+let miRuteo = [{path:'adivina',component:AdivinaElNumeroComponent},
+{path:'agilidad',component:AgilidadAritmeticaComponent}];
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdivinaElNumeroComponent
+    AdivinaElNumeroComponent,
+    AgilidadAritmeticaComponent
   ],
   imports: [
     BrowserModule,
