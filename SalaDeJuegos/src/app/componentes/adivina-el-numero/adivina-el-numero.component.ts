@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Adivina } from '../../clases/adivina';
 
 @Component({
   selector: 'app-adivina-el-numero',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdivinaElNumeroComponent implements OnInit {
 
-  constructor() { }
+  miJuego : Adivina;
+
+  constructor() {
+    this.miJuego = new Adivina ("Adivina El Número");
+   }
 
   ngOnInit() {
   }
+
 
 }

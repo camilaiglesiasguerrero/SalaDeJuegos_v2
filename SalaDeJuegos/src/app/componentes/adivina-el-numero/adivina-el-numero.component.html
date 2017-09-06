@@ -1,3 +1,18 @@
-<p>
-  adivina-el-numero works!
-</p>
+<div class="container">  
+    <h1>  {{miJuego.nombre}}</h1>
+</div>
+
+<div [hidden]="!miJuego.tengoNumSec"  class="container">
+  <div class="col-md-4"><h3>Ingrese número
+    <input class="w3-input" type="number" placeholder="Número" name="numeroIngresado" [(ngModel)]="miJuego.numeroIngresado" required></h3>
+  </div>
+  </div>
+  
+  <div class="container">
+    <button type="button" [hidden]="miJuego.tengoNumSec" (click)="miJuego.GenerarNuevo()">Nuevo</button>
+    <button type="button" [hidden]="!miJuego.tengoNumSec" (click)="miJuego.Verificar()">Verificar</button>
+    
+    <h2><p [hidden]="!miJuego.Gano">Ganó!!! y lo hizo en {{miJuego.contador}} chances </p></h2>
+    <h4><p [hidden]="miJuego.Gano">No Ganó</p></h4>
+    
+  </div>
