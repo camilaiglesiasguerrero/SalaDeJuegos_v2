@@ -6,12 +6,17 @@ export class Agilidad {
     resultado: number;
     Gano: boolean;
     Jugador: string;
+    needCalculo: boolean = true;
+    respuesta: number;
+    temporizador: any;
 
     constructor(elJuego: string) { 
         this.nombre = elJuego;
         }
       
         public GenerarCalculo():void{
+          this.Gano =false;
+          this.temporizador = setTimeout (this.Verificar,1000);
           this.numero1 = Math.floor(Math.random()*100+1);
           this.numero2 = Math.floor(Math.random()*100+1);
           let operadorN = Math.floor((Math.random()*4)+1);
@@ -33,5 +38,22 @@ export class Agilidad {
                 this.resultado = this.numero1 / this.numero2;
                 break;
           }
+          this.needCalculo = false;
+          
         }
+
+    public Verificar():boolean {
+        if(this.resultado == this.respuesta)
+        {
+            this.Gano = true;
+            this.needCalculo = true;
+            clearTimeout(this.temporizador);
+        }
+        else
+        {
+            this.Gano = false;
+            this.needCalculo = false;
+        }
+        return this.Gano; 
+    }
 }

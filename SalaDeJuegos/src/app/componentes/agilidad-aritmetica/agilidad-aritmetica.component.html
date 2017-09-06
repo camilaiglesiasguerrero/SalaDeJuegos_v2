@@ -1,3 +1,15 @@
 <div class="container">  
     <h1>  {{elJuego.nombre}}</h1>
 </div>
+
+<button type="button" [hidden]='!elJuego.needCalculo' (click)="elJuego.GenerarCalculo()">Nuevo</button>
+
+
+<input class="test"  [hidden]='elJuego.needCalculo' type="text" readonly value="{{elJuego.numero1}}{{elJuego.operador}}{{elJuego.numero2}}">
+<br><br>
+    <input class="test" [hidden]='elJuego.needCalculo' type="text" placeholder = "Resultado" [(ngModel)]="elJuego.respuesta">
+    <button type="button" [hidden]='elJuego.needCalculo' (click)="elJuego.Verificar()">Verificar</button>
+
+    <h2><p [hidden]="!elJuego.Gano">Ganó!!!y lo hizo en {{elJuego.temporizador}} segundos</p></h2>
+    <h4><p [hidden]="elJuego.Gano">No Ganó</p></h4>
+
