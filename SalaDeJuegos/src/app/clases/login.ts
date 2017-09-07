@@ -1,6 +1,6 @@
 export class Login {
 
-    usuario: string ="RObertito";
+    usuario: string;
     clave: string;
     tipoUser: string = 'null';
 
@@ -11,7 +11,10 @@ export class Login {
     public Entrar():void{
     //console.log("entra");
         if(this.usuario=="Juan" && this.clave=='123')
+        {    
             this.tipoUser = "admin";
+            
+        }
         else
             this.tipoUser = "invitado no logueado";
     }

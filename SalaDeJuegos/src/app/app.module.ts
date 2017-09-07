@@ -14,7 +14,8 @@ import { MenuComponent } from './Componentes/menu/menu.component';
 let miRuteo = [{path:'adivina',component:AdivinaElNumeroComponent},
 {path:'agilidad',component:AgilidadAritmeticaComponent},
 {path:'login',component:LoginComponent},
-{path:'menu',component:MenuComponent}];
+{path:'menu',component:MenuComponent},
+{path:'',component:LoginComponent}];
 
 @NgModule({
   declarations: [
