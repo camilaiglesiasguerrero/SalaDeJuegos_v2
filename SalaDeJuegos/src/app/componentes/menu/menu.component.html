@@ -1,10 +1,12 @@
-Bienvenido, {{miUsuario.nombre}}
+<h1>BIENVENIDO</h1>
+<h3>A qué vas a jugar?</h3>
 
 <div class="login-page">
   <div class="form">
     <form class="login-form"> 
-      <button (click)="menu.Agilidad">Agilidad Aritmética</button>
-      <button (click)="menu.Adivina()">Adivina el número</button>
+      <button [(ngModel)]='menu.Agilidad' (click)="menu.Juego()">Agilidad Aritmética</button>
+      
+      <button (click)="menu.Juego()">Adivina el número</button>
      </form> 
   </div>
 </div>
