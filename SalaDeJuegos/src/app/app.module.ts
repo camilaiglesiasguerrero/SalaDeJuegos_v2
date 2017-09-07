@@ -8,6 +8,7 @@ import { RouterModule, Router} from '@angular/router';
 import { AdivinaElNumeroComponent } from './componentes/adivina-el-numero/adivina-el-numero.component';
 import { AgilidadAritmeticaComponent } from './Componentes/agilidad-aritmetica/agilidad-aritmetica.component';
 import { LoginComponent } from './Componentes/login/login.component';
+import { AppServiceService } from './app-service.service';
 
 let miRuteo = [{path:'adivina',component:AdivinaElNumeroComponent},
 {path:'agilidad',component:AgilidadAritmeticaComponent},
@@ -26,7 +27,7 @@ let miRuteo = [{path:'adivina',component:AdivinaElNumeroComponent},
     RouterModule.forRoot(miRuteo),
     HttpModule
   ],
-  providers: [],
+  providers: [AppServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
