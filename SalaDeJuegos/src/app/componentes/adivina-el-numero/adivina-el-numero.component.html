@@ -1,4 +1,4 @@
-<div class="container">  
+<div class="jumbotron">  
     <h1>  {{miJuego.nombre}}</h1>
 </div>
 
@@ -9,7 +9,7 @@
   </div>
   
   <div class="container">
-    <button type="button" [hidden]="miJuego.tengoNumSec" (click)="miJuego.GenerarNuevo()">Nuevo</button>
+    <button type="button" class="btn btn-primary" [hidden]="miJuego.tengoNumSec" (click)="miJuego.GenerarNuevo()">Nuevo</button>
     <button type="button" [hidden]="!miJuego.tengoNumSec" (click)="miJuego.Verificar()">Verificar</button>
     
     <h2><p [hidden]="!miJuego.Gano">Ganó!!! y lo hizo en {{miJuego.contador}} chances </p></h2>

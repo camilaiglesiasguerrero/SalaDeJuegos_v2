@@ -24,7 +24,7 @@ let miRuteo = [{path:'adivina',component:AdivinaElNumeroComponent},
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(miRuteo),
-    HttpModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
