@@ -10,6 +10,7 @@ import { AgilidadAritmeticaComponent } from './Componentes/agilidad-aritmetica/a
 import { LoginComponent } from './Componentes/login/login.component';
 import { AppServiceService } from './app-service.service';
 import { MenuComponent } from './Componentes/menu/menu.component';
+import { EstadoDeResultadoComponent } from './Componentes/estado-de-resultado/estado-de-resultado.component';
 
 let miRuteo = [{path:'adivina',component:AdivinaElNumeroComponent},
 {path:'agilidad',component:AgilidadAritmeticaComponent},
@@ -23,7 +24,8 @@ let miRuteo = [{path:'adivina',component:AdivinaElNumeroComponent},
     AdivinaElNumeroComponent,
     AgilidadAritmeticaComponent,
     LoginComponent,
-    MenuComponent
+    MenuComponent,
+    EstadoDeResultadoComponent
   ],
   imports: [
     BrowserModule,
