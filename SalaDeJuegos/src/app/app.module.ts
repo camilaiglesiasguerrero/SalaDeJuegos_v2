@@ -9,17 +9,20 @@ import { AdivinaElNumeroComponent } from './componentes/adivina-el-numero/adivin
 import { AgilidadAritmeticaComponent } from './Componentes/agilidad-aritmetica/agilidad-aritmetica.component';
 import { LoginComponent } from './Componentes/login/login.component';
 import { AppServiceService } from './app-service.service';
+import { MenuComponent } from './Componentes/menu/menu.component';
 
 let miRuteo = [{path:'adivina',component:AdivinaElNumeroComponent},
 {path:'agilidad',component:AgilidadAritmeticaComponent},
-{path:'login',component:LoginComponent}];
+{path:'login',component:LoginComponent},
+{path:'menu',component:MenuComponent}];
 
 @NgModule({
   declarations: [
     AppComponent,
     AdivinaElNumeroComponent,
     AgilidadAritmeticaComponent,
-    LoginComponent
+    LoginComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
