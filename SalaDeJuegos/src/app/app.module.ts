@@ -11,12 +11,16 @@ import { LoginComponent } from './Componentes/login/login.component';
 import { AppServiceService } from './app-service.service';
 import { MenuComponent } from './Componentes/menu/menu.component';
 import { EstadoDeResultadosComponent } from './Componentes/estado-de-resultados/estado-de-resultados.component';
+import { MenuDeListadoComponent } from './Componentes/menu-de-listado/menu-de-listado.component';
 
 let miRuteo = [{path:'adivina',component:AdivinaElNumeroComponent},
 {path:'agilidad',component:AgilidadAritmeticaComponent},
 {path:'login',component:LoginComponent},
 {path:'menu',component:MenuComponent},
-{path:'',component:LoginComponent}];
+{path:'',component:LoginComponent},
+{path:'eerr',component:EstadoDeResultadosComponent},
+{path:'menuListado',component:MenuDeListadoComponent}
+];
 
 @NgModule({
   declarations: [
@@ -25,7 +29,8 @@ let miRuteo = [{path:'adivina',component:AdivinaElNumeroComponent},
     AgilidadAritmeticaComponent,
     LoginComponent,
     MenuComponent,
-    EstadoDeResultadosComponent
+    EstadoDeResultadosComponent,
+    MenuDeListadoComponent
   ],
   imports: [
     BrowserModule,

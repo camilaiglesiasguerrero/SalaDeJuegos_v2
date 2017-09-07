@@ -1,3 +1,6 @@
-<p>
-  estado-de-resultados works!
-</p>
+<div  *ngFor="let aux of listado"> <!-- por estar entre comillas dobles es typescript -->
+  <p>{{aux.nombre}}</p>
+  <p>{{aux.Jugador}}</p>
+  <p *ngIf="aux.Gano" >Gano</p><!-- para hacer comparativas -->
+  <p *ngIf="!aux.Gano">No ganó</p>
+</div>
