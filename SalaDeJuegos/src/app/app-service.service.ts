@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
-//import { AngularFire, fireBaseListObservable } from 'angularFire2'; 
+import { Agilidad } from './Clases/agilidad';
 
 @Injectable()
 export class AppServiceService {
- // usuarios: fireBaseListObservable <any[]>;
+ 
+  constructor() { }
 
-  //constructor(private af:AngularFire) { }
-
-  getUsuarios(){
+  public Listar() : Array<Juego>{
     //this.usuarios = this.af.database.list('/SalaDeJuegos') as fireBaseListObservable <any[]>;
     //return this.usuarios;
   }

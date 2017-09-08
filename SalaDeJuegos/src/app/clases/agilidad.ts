@@ -1,17 +1,18 @@
+//import { Juego } from './juego'
+//extends Juego
 export class Agilidad {
-    nombre : string;
     numero1: number;
     operador: string;
     numero2: number;
     resultado: number;
-    Gano: boolean;
-    Jugador: string;
     needCalculo: boolean = true;
     respuesta: number;
     temporizador: any;
+    nombre : string;
+    Gano: boolean;
+    Jugador: string;
 
-    constructor(elJuego: string) { 
-        this.nombre = elJuego;
+    constructor() { 
         }
       
         public GenerarCalculo():void{

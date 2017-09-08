@@ -1,4 +1,6 @@
-export class Adivina {
+//import { Juego } from './Juego';
+
+export class Adivina{ //extends Juego{
     nombre : string;
     numeroSecreto: number;
     Gano: boolean;
@@ -6,6 +8,7 @@ export class Adivina {
     numeroIngresado: number;
     tengoNumSec: boolean = false;
     contador: number;
+    
 
 constructor(elJuego: string) { 
   this.nombre = elJuego;
