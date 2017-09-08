@@ -1,0 +1,15 @@
+Funcionalidad de juegoos
+listado de resultados
+estadistica de los juegos
+registrar un usuario/modificar
+por cada ruta de subdireccion -> componentes que permitan acceder con children (estadistica, usuario, juego, listados). Cada children su menu (uno x juego, otros tres viendo lo mismo con el listado)
+Listadao de usuario o juegos
+estadistica --> cual quiero. 
+
+agregar piedra papel o tijera
+agregar juego daltonismo
+
+
+scketchflow -> no es necesario que tenga funcionalidad.
+
+VER API RES -> TIENE Q FUNCIONAR
